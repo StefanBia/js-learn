@@ -19,6 +19,29 @@
         let MAX = 57;
         let actual = MAX - 13;
         let percentage = actual / MAX;
+
+        let n = 5;
+        function add7(n){
+            return n + 7;
+        }
+        function multiply(a, b){
+            return a * b;
+        }
+        function capitalize(myString){
+            let a = myString.substr(0,1);
+            a = a.toUpperCase();
+            return a + myString.substr(1, myString.length);
+            // return a;
+        }
+        function lastLetter(myString){
+            return myString.charAt(myString.length - 1);
+        }
+        let x = 'mere'
+        console.log(capitalize(x));
+        console.log(lastLetter('abcd'));
+        
+
+        console.log('number is now: '+ add7(n));
     </script>
 </body>
 </html>
