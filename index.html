@@ -42,6 +42,74 @@
         
 
         console.log('number is now: '+ add7(n));
+        //data types
+        //number
+
+        alert(1/0);//infinity
+
+        //string
+
+        let s = "string";
+        let s1 = `my string + ${s}`;//need to use ` not ' for referencing another string ' -template literal'
+        //concatenation with + just like in java
+        //strings can go on separate lines like this
+        let test = `aaa
+        bbb`//use template literal, adds an endl in the string like using \n
+        alert(s1);
+        //use quotations marks in string like this
+        const goodQuotes1 = 'She said "I think so!"';
+        const goodQuotes2 = `She said "I'm not going in there!"`;
+        //or use an escape character \
+        const bigmouth = 'I\'ve got no right to take my place…';
+        //string methods
+        //The at() method is a new addition to JavaScript.
+        // It allows the use of negative indexes while charAt() do not.
+        // Now you can use myString.at(-2) instead of charAt(myString.length-2)
+        let text = "Apple, Banana, Kiwi";
+        let part = text.slice(7, 13);//slices at those values
+        let str = "Apple, Banana, Kiwi";
+        let part1 = str.substr(7, 6);
+        //The difference is that the second parameter specifies the length of the extracted part.
+
+        let text1 = "5";
+        let padded = text1.padStart(4,"0");
+        //Pad a string with "0" until it reaches the length 4: can use another character than 0
+
+        let text2 = "Hello world!";
+        let result = text2.repeat(2);
+        //copy the first string twice
+
+        let text3 = "Please visit Microsoft!";
+        let newText = text3.replace("Microsoft", "W3Schools");
+        //The replace() method replaces a specified value with another value in a string:
+        //The replace() method replaces only the first match
+        //In 2021, JavaScript introduced the string method replaceAll():
+
+        let text4 = "Please visit Microsoft and Microsoft!";
+        let newText1 = text4.replace(/Microsoft/g, "W3Schools");
+        //To replace all matches, use a regular expression with a /g flag (global match):regex can be used with no quotation marks
+
+        alert( 'Glow' > 'Glee' ); // true
+        //string comparison can be done like this and works like strcmp from C
+        
+
+
+        //bool
+
+        let bol = true;
+
+        //null
+
+        let nl = null
+
+        //undefined
+
+        let u;//print value will say undefined
+
+        //typeof operator
+
+        console.log(typeof(bol));//returns type of variable as string
+
     </script>
 </body>
 </html>
